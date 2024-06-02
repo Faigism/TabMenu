@@ -1,4 +1,13 @@
+import Navigation from './navigation'
+import { useState } from 'react'
+
 const App = () => {
-  return <div>App</div>
+  const [route, setRoute] = useState('home')
+
+  return (
+    <div>
+      <Navigation initialRoute={route} setRoute={setRoute} />
+    </div>
+  )
 }
 export default App
